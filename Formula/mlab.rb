@@ -5,6 +5,11 @@ class Mlab < Formula
   sha256 "2bcb71798533867933c742f9f882e476891de96ec4f6df125babef7b153aea25"
   license "MIT"
 
+  livecheck do
+    url :stable
+    strategy :github_latest
+  end
+
   def install
     bin.install "mlab"
   end
